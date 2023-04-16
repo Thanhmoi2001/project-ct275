@@ -58,8 +58,7 @@
  }
 ?>
                     <div class="container mt-5">
-                        <div class="d-flex justify-content-center">
-                        <form class="mt-3 col-md-6" action="add_khachhang.php" method="post" name="frm" onsubmit="return capnhat()">
+                        <form class="m-auto mt-3 col-md-6 row" action="add_khachhang.php" method="post" name="frm" onsubmit="return capnhat()">
                                 <h2 class="text-center">Thêm khách hàng</h2>
                                 <div>
                                     <label class="form-label" for="username" >Tên đăng nhập</label>
@@ -121,12 +120,10 @@
                                         </select>
                                     </div>
                                 </div>
-                                </div>
                                 <div class="text-center row mb-3">
                                     <button type="submit" class="btn btn-primary mt-3 ">Thêm khách hàng</button>
                                 </div>
                             </form>
-                    </div>
                     </div>
                     <script>
                         function  capnhat()
