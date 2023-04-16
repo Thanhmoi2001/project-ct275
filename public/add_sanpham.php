@@ -6,7 +6,6 @@ session_start();
     include '../public/check_admin.php';
     ?>
     <div class="container">
-        <div class="d-flex justify-content-center">
             <?php
                     if ($_SERVER['REQUEST_METHOD'] == 'POST'){
                         $query = 'INSERT INTO dongxe (madongXe, tendongXe) VALUES (?,?)';
@@ -40,7 +39,7 @@ session_start();
                             }
                     }
                 ?>  
-                <form action="add_sanpham.php" name="add" method="post">
+                <form class="m-auto" action="add_sanpham.php" name="add" method="post">
                     <h3 class="text-center pb-5\">Thêm sản phẩm</h3>
                     <div class="mt-3 mb-3">
                         <label for="madongXe">Mã dòng xe:</label>
@@ -71,13 +70,12 @@ session_start();
                         <input class="form-control" id="thongtinXe" type="text" name="thongtinXe">
                     </div>
                     <div class="mb-3">
-                        <button type="submit" onclick="return check(this)" class="btn btn-primary float-end">Thêm</button>
+                        <button type="submit" onclick="return check(this)" class="btn btn-primary">Thêm</button>
                     </div>
                     
                 </form>
             </div>
         </div>
-    </div>
     <script>
             function check(){
                 var madongXe = document.getElementById('madongXe').value;
